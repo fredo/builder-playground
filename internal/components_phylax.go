@@ -62,7 +62,8 @@ func (o *OpTalos) Run(service *Service, ctx *ExContext) {
 		WithArtifact("/data/l2-genesis.json", "l2-genesis.json").
 		WithVolume("data", "/data_op_reth").
 		WithEnv("AE_ASSERTION_GAS_LIMIT", strconv.FormatUint(o.AssexGasLimit, 10)).
-		WithEnv("AE_BLOCK_TAG", "latest")
+		WithEnv("AE_BLOCK_TAG", "latest").
+		WithEnv("RUST_LOG", "debug")
 }
 
 func (o *OpTalos) Name() string {
