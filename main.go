@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/odyslam/builder-playground/internal"
+	"github.com/fredo/builder-playground/internal"
 	"github.com/spf13/cobra"
 )
 
